@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width:500px;
+            font-variant: small-caps;
+            margin: auto;
+        }
+        td, th{
+            border:2px solid black;
+            text-align: center;
+            padding: 5px 0 5px 0;
+        }
+        
+       .nome, .Idade{
+            background-color: skyblue;
+       }
+       .sexo, .Profissão{
+            background-color: blanchedalmond;
+       }
+        .p{
+            padding:10px;
+            background-color:lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="Idade">
+            <col class="Profissão">
+        </colgroup>
+        <caption class="p">Cadastro</caption>
+        <tr class="Grupo">
+            <th scope="col">Nome</th>
+            <th scope="col"> Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Junilson Pogba</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Jogador</td>
+        </tr>
+        <tr>
+            <td>Filipe Pedro</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Pedro</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Motorista</td>
+        </tr>
+    </table>
+</body>
+</html>
