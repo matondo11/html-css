@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Trabalhando com formulários</h1>
+    <form action="cadastro.php" method="post">
+       <fieldset>
+        <label for="select">Províncias</label>
+            <select name="select" id="select">
+                <option>Luanda</option>
+                <optgroup label="Região-norte">
+                    <option selected>Uíge</option>
+                    <option >Zaire</option>
+                    <option >Cabinda</option>
+                </optgroup>
+                <optgroup label="Região-Sul">
+                    <option >Huíla</option>
+                    <option >Huambo</option>
+                    <option >Bié</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="prof">Profissão:</label>
+                <input type="text" name="prof" id="prof" list="pro">
+            </p>
+            <datalist id="pro">
+                <option>jogador</option>
+                <option>Pintor</option>
+            </datalist>
+       </fieldset>
+        <p>
+            <input type="submit" value="validar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

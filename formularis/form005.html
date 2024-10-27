@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Trabalhando com formulários</h1>
+    <form action="cadastro.php" method="post">
+       <fieldset>
+        <legend>Desportos</legend>
+          <p>
+            <label for="esc">futebol</label>
+            <input type="checkbox" name="esc" id="esc"><br>
+            <label for="esco">andebol</label>
+            <input type="checkbox" name="esco" id="esco"><br>
+            <label for="escl">futsal</label>
+            <input type="checkbox" name="escl" id="escl"><br>
+          </p>
+       </fieldset>
+        <p>
+            <input type="submit" value="validar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

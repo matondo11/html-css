@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Trabalhando com formulários</h1>
+    <form method="post">
+       <p>
+        <label for="nome">Usuário:</label>
+        <input type="text" name="nome" id="nome" required minlength="5" size="12" placeholder="minimo 5 letras">
+       </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="12" size="12" autocomplete="username">
+        </p>
+        <input type="submit" value="validar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>

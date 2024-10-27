@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Trabalhando com formulários</h1>
+    <form action="cadastro.php" method="post">
+       <p>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required minlength="5" size="12" placeholder="Nome completo">
+       </p>
+        <p>
+            <label for="media">Média:</label>
+            <input type="number" name="media" id="media" minlength="0"  maxlength="10" size="12">
+        </p>
+        <p>
+            <label for="Ano">Ano lectivo:</label>
+           <input type="date" name="Ano" id="Ano" >
+        </p>
+        <p>
+            <label for="tel">telefone:</label>
+           <input type="tel" name="tel" id="tel" pattern="^[0-9]{3}-{3}-{3}">
+        </p>
+        <p>
+            <label for="Ano">e-mail::</label>
+           <input type="email" name="Ano" id="Ano" size="30">
+        </p>
+        <input type="submit" value="validar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>

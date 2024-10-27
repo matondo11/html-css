@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Trabalhando com formulários</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="num1">valor</label>
+            <input type="number" name="num1" id="num1" oninput="saida.innerHTML= Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">valor</label>
+            <input type="number" name="num2" id="num2"
+            oninput="saida.innerHTML= Number(num1.value) + Number(num2.value)">
+        </p>
+       <p>
+        <label for="saida">Soma</label>
+        <output name="saida" id="saida"></output>
+       </p>
+       <p>
+            <label for="id">range</label>
+            <input type="range" id="inter" name="id" oninput="saida.innerHTML=Number(inter.value)">
+            <output id="saida" name="saida">5</output>
+       </p>
+        <p>
+            <input type="submit" value="validar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
