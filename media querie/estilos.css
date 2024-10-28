@@ -13,3 +13,15 @@ html, body{
     background-size: contain;
     background-repeat: no-repeat;
 }
+@media screen and (orientation:portrait) {
+    body{
+        background-image:url(img/cev-portrait.jpg);
+    }       
+}
+@media screen and (orientation:landscape) {
+    body{
+        background-image:url(img/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+    
+}
