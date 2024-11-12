@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
         <h1 class="texto">Meu site</h1>
+        <span><img src="menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" class="img" onclick="menu()"></span>
         <ul class="menu">
             <li><a href="#">Opção 01</a></li>
             <li><a href="#">Opção 02</a></li>
             <li><a href="#">Opção 03</a></li>
             <li><a href="#">Opção 04</a></li>
             <li><a href="#">Opção 05</a></li>
-            <li><a href="#">Opção 06</a></li>
+            <li><a href="#" class="ulti">Opção 06</a></li>
         </ul>
     </header>
     <main>
         
     </main>
+    <script>
+        let p = document.querySelector('.menu')
+        let q = document.querySelector('.img')
+        function menu(){
+            q.style.setProperty('display', 'none')
+            p.style.setProperty('display', 'inline')
+
+        }
+
+    </script>
 </body>
 </html>
